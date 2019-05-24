@@ -1,1 +1,4 @@
 silva-*
+*.fa
+*.phy
+.DS_Store
