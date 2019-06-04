@@ -1,3 +1,9 @@
 silva-*
+<<<<<<< HEAD
 *.phy
 *.fa
+=======
+*.fa
+*.phy
+.DS_Store
+>>>>>>> 0a7ec33e2a3666df97b3131b609ce7b0b2322cfa
