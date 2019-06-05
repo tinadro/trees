@@ -1,6 +1,11 @@
 from Bio import Phylo
+import csv, os
 
+#~~~~~~~~~~~~~~~~~~~~~
+# GET A LIST OF NODES
+#~~~~~~~~~~~~~~~~~~~~~
 
+# define a function that makes a dictionary, node names are the heys
 def lookup_by_names(tree):
     names = {}
     for clade in tree.find_clades():
@@ -8,27 +13,33 @@ def lookup_by_names(tree):
             if clade.name in names:
                 raise ValueError("Duplicate key: %s" % clade.name)
             names[clade.name] = clade
-    return names #spits out a dictionary where the keys are the node names, values are Clade(branch_length=value, name=same as key)
+    return names # spits out a dictionary where the keys are the node names, values are Clade(branch_length=value, name=same as key)
 
-tree = Phylo.read('Epsilonbacteraeota.renamed.tree', 'newick')
-names = lookup_by_names(tree)
+tree = Phylo.read('Epsilonbacteraeota.renamed.tree', 'newick') # open the tree file 
+names = lookup_by_names(tree) # use the function to get the dictionary
 
-#def name_split(name):
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# SAVE SPECIES NAMES AND ASSEMBLY ACCESSIONS IN A TABLE
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-for node in names:
-	if node.find('GCF_') != -1 or node.find('GCA_') != -1: #if gcf is not provided
-		species = '_'.join(node.split('_', 2)[:2])
-		gcf = '_'.join(node.split('_', 2)[2:])
-	else:
-		species = '_'.join(node.split('_', 2)[:2])
-		uba = '_'.join(node.split('_', 2)[2:])
-		print(uba)
-#this prints out the names very nicely. can save them to a table and then add the 1, 0, -1 for labels accordingly 
-#can also split them to extract the GCF/GCA numbers or uba numbers to get the specific species
-#then would have to check if i have them in my database (manually?) and then check if i found a BBH (full circle), psiblast hit (outline), or not at all (none)
-#and make the text file/ excel file accordingly 
+table = 'species_accession.csv' # filename of the table
 
+#if the table already exists, delete it. we wanna write a new one not append to the incorrect one
+file_exists = os.path.isfile(table)
+if file_exists:
+	os.remove(table)
 
-#a = list(names.keys()) #converts names.keys() into a list
-
+with open(table, 'w+') as acc: # make and open the table file
+	write = csv.writer(acc, delimiter=',')
+	write.writerow(['species', 'accession']) # put in the headers
+	for node in names:
+		if node.find('GCF_') != -1 or node.find('GCA_') != -1: #if gcf/gca is provided
+			species = '_'.join(node.split('_')[:-2])
+			gcf = '_'.join(node.split('_')[-2:])
+			ls = [species, gcf] # split the name from the accession and save them as a list 
+		else: # if uba is provided
+			species = '_'.join(node.split('_', 2)[:-1])
+			uba = ''.join(node.split('_', 2)[-1])
+			ls = [species, uba] # split the name from the accession and save them as a list 
+		write.writerow(ls) # write the list as a line in the csv
 

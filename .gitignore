@@ -3,3 +3,4 @@ silva-*
 *.phy
 *.fna
 .DS_Store
+*.csv
