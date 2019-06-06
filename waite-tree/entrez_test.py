@@ -1,25 +1,43 @@
 from Bio import Entrez
 Entrez.email = 'td1515@ic.ac.uk'
 
-handle = Entrez.esearch(db='assembly', term='UBA6792')
-record = Entrez.read(handle)
+#GCF_000518225.1
+
+def get_entrez_id(accession):
+	handle = Entrez.esearch(db='assembly', term=accession)
+	record = Entrez.read(handle)
+	ids = record['IdList']
+	return ids
+
+#fetch summary of the assembly identified with the id, return the uba, gca, and gcf numbers.
+def get_assembly_summary(ids):
+	handle = Entrez.esummary(db='assembly', id=ids, report='full')
+	record = Entrez.read(handle, validate=False)
+	summary = record['DocumentSummarySet']['DocumentSummary'][0]
+	species = summary['Organism']
+#	uba = summary['Biosource']['Isolate']
+#	gca = summary['Synonym']['Genbank']
+#	gcf = summary['Synonym']['RefSeq']
+	print(species)
+
+ids = get_entrez_id('GCF_000518225.1')
+get_assembly_summary(ids)
+
+#handle = Entrez.esearch(db='assembly', term='GCF_000518225.1')
+#record = Entrez.read(handle)
+#ids = record['IdList'][0]
 
 
 #get raw assembly summary
-handle = Entrez.esummary(db='assembly', id='1275351', report='full')
-record = Entrez.read(handle)
-#print(type(record))
+#handle = Entrez.esummary(db='assembly', id=ids, report='full')
+#record = Entrez.read(handle)
+#summary = record['DocumentSummarySet']['DocumentSummary'][0]
+#uba = summary['Biosource']['Isolate']
+#gca = summary['Synonym']['Genbank']
+#gcf = summary['Synonym']['RefSeq']
+#print(gca)
 
-#print(record['DocumentSummarySet'])
 
-summary = record['DocumentSummarySet']['DocumentSummary']
-
-
-
-#for key in summary[0]['Biosource'].keys():
-#	print(key)
-
-uba = summary[0]['Biosource']['Isolate']
 
 
 #	summary[0] keys:

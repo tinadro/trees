@@ -1,13 +1,14 @@
 from os.path import dirname, abspath
+from Bio import Entrez
 import pandas as pd 
 import sys
+Entrez.email = 'td1515@ic.ac.uk'
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # OPEN THE NAME + ACC TABLE
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-df = pd.read_csv('species_accession.csv')
-acc = df['accession']
+acc = pd.read_csv('species_accession.csv')
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~
 # GET PATH TO RESULTS XLSX
@@ -29,32 +30,61 @@ def xls_open(query): # query is PflA or PflB
 	del dic[sheets[2]]
 	del sheets[0]
 	del sheets[1]
-	return dic, sheets
-# list is 'BBHs', 'BBH-eval-filter', 'psiblast', 'psiblast-eval-filter', 'reidentified-psiblast', 'novel-psiblast'
+	return sheets, dic
+# list is 'BBH-eval-filter', 'psiblast-eval-filter', 'reidentified-psiblast', 'novel-psiblast'
+
+#make it one dataframe with one column-subject_gcf, and sheet name as the index
+def make_xls_df(sheetnames, xls_dict):
+	data = pd.Series()
+	for item in sheetnames: # for every excel worksheet 
+		for index, line in xls_dict[item].iterrows(): # for every excel worksheet (sheet names are in sheeta_pfla) 
+			gcf = line['subject_gcf']
+			ind = item
+			s = pd.Series(data=gcf, index=[ind])
+			data = data.append(s)
+	return data		
 
 # find the entrez id associated with input accession number
 def get_entrez_id(accession):
-	ids = []
 	handle = Entrez.esearch(db='assembly', term=accession)
 	record = Entrez.read(handle)
-	ids.append(record['IdList'])
+	ids = record['IdList']
 	return ids
 
-#fetch raw summary of the assembly identified with the id
-def raw_assembly_summary(as_id):
-	handle = Entrez.esummary(db='assembly', id=as_id, report='full')
+#fetch summary of the assembly identified with the id, return the uba, gca, and gcf numbers.
+def get_assembly_summary(ids):
+	handle = Entrez.esummary(db='assembly', id=ids, report='full')
 	record = Entrez.read(handle)
-	return record
+	summary = record['DocumentSummarySet']['DocumentSummary'][0]
+	uba = summary['Biosource']['Isolate']
+	gca = summary['Synonym']['Genbank']
+	gcf = summary['Synonym']['RefSeq']
+	return uba, gca, gcf
 
-d_pfla, sheets_pfla = xls_open('PflA')
+sheets_pfla, d_pfla = xls_open('PflA') # open the results xlsx
+data_pfla = make_xls_df(sheets_pfla, d_pfla) # make the xlsx a series of gcf's, with workshet names as indices 
 
-for item in sheets_pfla:
-	for index, line in d_pfla[item].iterrows():
-		gcf = line['subject_gcf']
-		ent_ids = get_entrez_id(gcf)
-		summary = raw_assembly_summary(ent_ids)
+# for gcf in acc, put it through the get_entrez and get_assembly functions- output the gcf. 
+# search for that gcf in data_pfla. if it's there, store the index of the hit. if it's not, save the acc code
 
 
+acc_found = pd.DataFrame()
+acc_missing = pd.DataFrame(columns=['species', 'accession'])
+
+def run_entrez_gcf_check(accession, ind):
+	ids = get_entrez_id(accession)
+	uba, gca, gcf = get_assembly_summary(ids)
+	if not gcf:
+		row = list(acc.loc[ind])
+		return row
+	else: 
+		df = data_pfla.str.find(gcf)
+		return df
+
+
+for index, value in acc['accession'].iteritems():
+	line = run_entrez_gcf_check(value, index)
+	print(line)
 
 
 d_pflb, sheets_pflb = xls_open('PflB')
