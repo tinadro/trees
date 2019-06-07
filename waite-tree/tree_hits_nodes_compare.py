@@ -10,9 +10,9 @@ Entrez.email = 'td1515@ic.ac.uk'
 
 acc = pd.read_csv('species_accession.csv')
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~
-# GET PATH TO RESULTS XLSX
-#~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# PATH TO PARENT DIR OF ALL PROJECT FOLDERS
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 parentdir = dirname(dirname(dirname(abspath(__file__))))
 
@@ -20,7 +20,7 @@ parentdir = dirname(dirname(dirname(abspath(__file__))))
 # SEARCH FOR THE GCF AND EXTRACT CORRESPONDING PROTEIN ACC.VER
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#extracts the subject_gcf numbers from the PflAB-BBH results tables
+# extracts the subject_gcf numbers from the PflAB-BBH results tables
 def xls_open(query): # query is PflA or PflB
 	bbhresult = parentdir + '/1_bidirectional-best-hits/results-Cj' + query + '.xlsx' # path to results xlsx 
 	xls = pd.ExcelFile(bbhresult) #
@@ -32,6 +32,10 @@ def xls_open(query): # query is PflA or PflB
 	del sheets[1]
 	return sheets, dic
 # list is 'BBH-eval-filter', 'psiblast-eval-filter', 'reidentified-psiblast', 'novel-psiblast'
+
+
+# 
+
 
 #make it one dataframe with one column-subject_gcf, and sheet name as the index
 def make_xls_df(sheetnames, xls_dict):
