@@ -1,42 +1,50 @@
-from Bio import Entrez
+from Bio import Entrez, SeqIO
 Entrez.email = 'td1515@ic.ac.uk'
 
 #GCF_000518225.1
 
 def get_entrez_id(accession):
-	handle = Entrez.esearch(db='assembly', term=accession)
+	handle = Entrez.esearch(db='assembly', term=accession, retmax='100000')
 	record = Entrez.read(handle)
+	handle.close()
 	ids = record['IdList']
 	return ids
 
-#fetch summary of the assembly identified with the id, return the uba, gca, and gcf numbers.
+
+#fetch summary of the assembly identified with the id, 
 def get_assembly_summary(ids):
 	handle = Entrez.esummary(db='assembly', id=ids, report='full')
 	record = Entrez.read(handle, validate=False)
+	handle.close()
 	summary = record['DocumentSummarySet']['DocumentSummary'][0]
-	species = summary['Organism']
-#	uba = summary['Biosource']['Isolate']
-#	gca = summary['Synonym']['Genbank']
-#	gcf = summary['Synonym']['RefSeq']
-	print(species)
+	return summary
 
-ids = get_entrez_id('GCF_000518225.1')
-get_assembly_summary(ids)
+def get_taxonomy_summary(ids):
+	handle = Entrez.esummary(db='taxonomy', id=ids, report='full')
+	record = Entrez.read(handle, validate=False)
+	handle.close()
+	summary = record
+	return summary	
 
-#handle = Entrez.esearch(db='assembly', term='GCF_000518225.1')
-#record = Entrez.read(handle)
-#ids = record['IdList'][0]
+def get_assembly(ids):
+	handle = Entrez.efetch(db='assembly', id=ids)
+	record = SeqIO.read(handle, 'fasta')
+	handle.close()
+	name = ids + 'test.faa'
+	SeqIO.write(record, name, 'fasta')
 
 
-#get raw assembly summary
-#handle = Entrez.esummary(db='assembly', id=ids, report='full')
-#record = Entrez.read(handle)
-#summary = record['DocumentSummarySet']['DocumentSummary'][0]
-#uba = summary['Biosource']['Isolate']
-#gca = summary['Synonym']['Genbank']
-#gcf = summary['Synonym']['RefSeq']
-#print(gca)
+uid = get_entrez_id('GCA_000310245.1')
+d = get_assembly_summary(uid)
+name = d['Organism'].replace('(e-proteobacteria)', '')
+#strain = d['Biosource']['InfraspeciesList'][0]
+for key in d.keys():
+	print(d[key])
+#print('organism_name ', name)
+#print('taxid ', d['Taxid'])
+#print('species_taxid ', d['SpeciesTaxid'])
 
+#['organism_name', 'infraspecific_name', 'taxid', 'species_taxid']
 
 
 

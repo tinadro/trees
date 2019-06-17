@@ -7,8 +7,3 @@ silva-*
 campylobacter*.mfa
 epsilonbacter*.mfa
 *.gbff
-*neighbor*
-*protdist*
-*seqboot*
-*outtree
-*outfile
