@@ -7,3 +7,11 @@ silva-*
 campylobacter*.mfa
 epsilonbacter*.mfa
 *.gbff
+*neighbor*
+*protdist*
+*seqboot*
+*outtree
+*outfile
+epsilon-*-tre*/NJ-*/*
+!epsilon-*-tre*/NJ-*/*.tree
+!epsilon-*-tre*/NJ-*/*.py

@@ -34,9 +34,6 @@ def xls_open(query): # query is PflA or PflB
 # list is 'BBH-eval-filter', 'psiblast-eval-filter', 'reidentified-psiblast', 'novel-psiblast'
 
 
-# 
-
-
 #make it one dataframe with one column-subject_gcf, and sheet name as the index
 def make_xls_df(sheetnames, xls_dict):
 	data = pd.Series()

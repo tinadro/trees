@@ -12,3 +12,9 @@ epsilonbacter*.mfa
 *seqboot*
 *outtree
 *outfile
+epsilon-*-tre*/NJ-*/*
+!epsilon-*-tre*/NJ-*/*.tree
+!epsilon-*-tre*/NJ-*/*.py
+!epsilon-*-tre*/NJ-*/*.csv
+!epsilon-*-tre*/NJ-*/*tsv
+!epsilon-*-tre*/NJ-*/*.xlsx
