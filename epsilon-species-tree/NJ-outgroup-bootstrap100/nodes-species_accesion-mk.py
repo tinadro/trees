@@ -11,22 +11,28 @@ Entrez.email = 'td1515@ic.ac.uk'
 
 # define a function that makes a dictionary, node names are the heys
 def lookup_by_names(tree):
-    names = {}
+    names = []
     for clade in tree.find_clades():
         if clade.name:
             if clade.name in names:
                 raise ValueError("Duplicate key: %s" % clade.name)
-            names[clade.name] = clade
-    return names # spits out a dictionary where the keys are the node names, values are Clade(branch_length=value, name=same as key)
+            names.append(clade.name)
+    return names # spits out a list of node names 
 
 tree = Phylo.read(sys.argv[1], 'newick') # open the tree file 
 names = lookup_by_names(tree) # use the function to get the dictionary
 
+names = [i for i in names if 'ROOT' not in i]
+
+for ele in names:
+	if 'porcin' in ele:
+		print(ele)
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # SAVE SPECIES NAMES AND ASSEMBLY ACCESSIONS IN A TABLE
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-table = 'nodes-species_accession.tsv' # filename of the table
+tree_kind = ''.join(sys.argv[1].split('-')[3:])
+table = 'nodes-species_accession_'+tree_kind+'.tsv' # filename of the table
 
 #if the table already exists, delete it. we wanna write a new one not append to the incorrect one
 file_exists = os.path.isfile(table)

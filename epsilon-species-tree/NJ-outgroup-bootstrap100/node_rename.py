@@ -45,10 +45,13 @@ results = pd.DataFrame(columns=['node', 'label'])
 
 for node in nm:
 	row = ref.loc[ref['locus_tag'].str.contains(node)]
-	row.drop_duplicates(subset=['gcf'], inplace=True)
+	row  = row.drop_duplicates(subset=['gcf'])
 	try:
 		row = row.iloc[0]
-		label = row['organism_name'] + ' ' + row['gcf']
+		org_name = row['organism_name']
+		if 'porcin' in org_name:
+			org_name = 'Arcobacter_porcinus'
+		label = org_name + ' ' + row['gcf']
 		label = label.replace(' ', '_')
 		line = pd.Series({'node': node, 'label': label})
 		results = results.append(line, ignore_index=True)
@@ -60,7 +63,9 @@ for node in nm:
 print(results.head(10))
 print(len(results))
 
-results.to_csv(sys.argv[1]+'_node_rename.csv', header=False, index=False)
+
+n = ''.join(sys.argv[1].split('-')[3:])
+results.to_csv('node_rename_'+n+'.csv', header=False, index=False)
 
 
 

@@ -1,14 +1,16 @@
 from os.path import dirname, abspath
 from Bio import Entrez
 import pandas as pd 
-import sys
+import sys, os
 Entrez.email = 'td1515@ic.ac.uk'
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # OPEN THE NAME + GCF TABLE
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-acc = pd.read_csv('nodes-species_accession.tsv', sep='\t')
+tree = sys.argv[1]
+kind = ''.join(sys.argv[1].split('-')[3:])
+acc = pd.read_csv('nodes-species_accession_'+kind+'.tsv', sep='\t')
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # PATH TO PARENT DIR OF ALL PROJECT FOLDERS
@@ -74,7 +76,7 @@ final_a = pd.concat([acc, pfla], axis=1, sort=False) # concatenate the species_a
 pflb = master_function('PflB')
 final_b = pd.concat([acc, pflb], axis=1, sort=False)
 
-with pd.ExcelWriter('nodes-bbh-count.xlsx') as w:
+with pd.ExcelWriter('nodes-bbh-count-'+kind+'.xlsx') as w:
 	final_a.to_excel(w, sheet_name='PflA_nodes_bbhs')
 	final_b.to_excel(w, sheet_name='PflB_nodes_bbhs')
 

@@ -1,6 +1,7 @@
 from Bio import Phylo
 import pandas as pd 
 import numpy as np
+import sys
 
 # Node name | PflA | PflB | no full genome 
 
@@ -8,10 +9,14 @@ import numpy as np
 # OPEN DATA
 #~~~~~~~~~~~
 
-pfla = pd.read_excel('nodes-bbh-count.xlsx', sheet_name='PflA_nodes_bbhs')
+kind = ''.join(sys.argv[1].split('-')[3:])
+
+pfla = pd.read_excel('nodes-bbh-count-'+kind+'.xlsx', sheet_name='PflA_nodes_bbhs')
 pfla = pfla.loc[:, ['accession', 'BBH', 'psiblast', 'negatives', 'absent']]
-pflb = pd.read_excel('nodes-bbh-count.xlsx', sheet_name='PflB_nodes_bbhs')
+pflb = pd.read_excel('nodes-bbh-count-'+kind+'.xlsx', sheet_name='PflB_nodes_bbhs')
 pflb = pflb.loc[:, ['accession', 'BBH', 'psiblast', 'negatives', 'absent']]
+print('opened pfla+pflb .xlsx sheets')
+
 
 # writes a new column, saying which column has the greatest value in each row
 def max_col(df):
@@ -23,21 +28,37 @@ def max_col(df):
 # GET A DF OF NODES AND COUNTS
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+#def lookup_by_names(tree, df):
+#	names = {}
+#	for clade in tree.find_clades():
+#		if clade.name:
+#			if clade.name in names:
+#				raise ValueError("Duplicate key: %s" % clade.name)
+#			names[clade.name] = clade
+#	for node in names.keys():
+#		for ind, val in df.iterrows():
+#			print(val[0])
+#			if val[0] in node:
+#				df.iloc[ind, 0] = node
+#	return df   ~~~~~~~~~~~~ dict version
+
 # makes a data frame where first column are node names, other columns are bbh, psi, and negatives count
 def lookup_by_names(tree, df):
-	names = {}
-	for clade in tree.find_clades():
-		if clade.name:
-			if clade.name in names:
-				raise ValueError("Duplicate key: %s" % clade.name)
-			names[clade.name] = clade
-	for node in names.keys():
-		for ind, val in df.iterrows():
-			if val[0] in node:
-				df.iloc[ind, 0] = node
-	return df 
+    names = []
+    for clade in tree.find_clades():
+        if clade.name:
+            if clade.name in names:
+                raise ValueError("Duplicate key: %s" % clade.name)
+            names.append(clade.name)
+    names = [i for i in names if 'ROOT' not in i]
 
-tree = Phylo.read('16s-epsilon-outgroup-fitch-labelled-r.tree', 'newick') # open the tree file 
+    for node in names:
+        for ind, val in df['accession'].iteritems():
+            if val in node:
+                df.iloc[ind, 0] = node
+    return df 
+
+tree = Phylo.read(sys.argv[1], 'newick') # open the tree file 
 pfla = lookup_by_names(tree, pfla) # use the function to get the dictionary
 pflb = lookup_by_names(tree, pflb)
 
@@ -88,11 +109,13 @@ df['no_full_genome'] = absent['binary']
 
 df.PflA = df.PflA.astype(int) # change the numbers from floats to integers 
 df.PflB = df.PflB.astype(int) 
+df.no_PflA_found = df.no_PflA_found.astype(int)
+df.no_PflB_found = df.no_PflB_found.astype(int) 
 df.no_full_genome = df.no_full_genome.astype(int)
 
 print(df.head())
 
-df.to_csv('binary-annotation.csv', header=False, index=False)
+df.to_csv('binary-annotation-'+kind+'.csv', header=False, index=False)
 
 
 
