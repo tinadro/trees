@@ -1,0 +1,57 @@
+TREE_COLORS
+#use this template to define branch colors and styles, colored ranges and label colors/font styles/backgrounds
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+#SEPARATOR TAB
+SEPARATOR SPACE
+#SEPARATOR COMMA
+
+#First 3 fields define the node, type and color
+#Possible types are:
+#'range': defines a colored range (colored background for labels/clade)
+#'clade': defines color/style for all branches in a clade
+#'branch': defines color/style for a single branch
+#'label': defines font color/style for the leaf label
+#'label_background': defines the leaf label background color
+
+#The following additional fields are required:
+#for 'range', field 4 defines the colored range label (used in the legend)
+
+#The following additional fields are optional:
+#for 'label', field 4 defines the font style ('normal',''bold', 'italic' or 'bold-italic') and field 5 defines the numeric scale factor for the font size (eg. with value 2, font size for that label will be 2x the standard size)
+#for 'clade' and 'branch', field 4 defines the branch style ('normal' or 'dashed') and field 5 defines the branch width scale factor (eg. with value 0.5, branch width for that clade will be 0.5 the standard width)
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+#NODE_ID TYPE COLOR LABEL_OR_STYLE SIZE_FACTOR
+
+#Examples
+#internal node with solid branches colored blue and twice the standard width
+#9031|9606 clade #0000ff normal 2
+#internal node with dashed branches colored red and one half the standard width
+#601|340 clade #ff0000 dashed 0.5
+#a single internal branch colored green, dashed and 5 times the normal width
+#915|777 branch #00ff00 dashed 5
+
+#colored range covering all leaves of an internal node,  colored red and with label 'Eukaryota'
+#184922|9606 range #ff0000 Eukaryota
+#examples of colored ranges from iTOL's Tree of Life
+#2190|2287 range #aaffaa Archaea
+#623|1502 range #aaaaff Bacteria
+
+#HIGHLIGHT 4 BIGGEST GENERA
+Helicobacter apodemus GCF 003097575.1|Helicobacter_pylori_GCF_003957395.1 range #e8daef Helicobacter 
+Helicobacter_pylori_SouthAfrica7_GCF_000185245.1|Helicobacter_pylori_GCF_003957395.1 range #dbc4e6 H._pylori
+Sulfurospirillum_sp._SL2-2_GCF_002205395.1|Sulfurospirillum_barnesii_SES-3_GCF_000265295.1 range #fde5e6 Sulfospirillum
+Arcobacter_skirrowii_GCF_003939045.1|Arcobacter_pacificus_GCF_004214795.1 range #d5f5e3 Arcobacter
+Campylobacter_sputorum_GCF_002220775.1|Campylobacter_jejuni_GCF_002587225.1 range #ffffcc Campylobacter
+Campylobacter_jejuni_subsp._doylei_269.97_GCF_000017485.1|Campylobacter_jejuni_GCF_002587225.1 range #f8d799 C._jejuni
+
