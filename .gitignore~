@@ -4,6 +4,7 @@ silva-*
 *.fna
 .DS_Store
 *.csv
+!*ML/*.csv
 campylobacter*.mfa
 epsilonbacter*.mfa
 *.gbff
