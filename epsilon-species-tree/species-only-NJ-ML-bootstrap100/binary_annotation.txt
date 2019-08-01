@@ -1,0 +1,171 @@
+DATASET_BINARY
+#Binary datasets are visualized as filled or empty symbols, depending on the value associated with a node (0 or 1).
+#Each node can have multiple associated values, and each value will be represented by a symbol (defined in FIELD_SHAPES) with corresponding color and label (from FIELD_COLORS and FIELD_LABELS).
+#Possible values (defined under DATA below) for each node are 1 (filled shapes), 0 (empty shapes) and -1 (completely omitted).
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL,PflAB-BBH
+
+#dataset color (can be changed later)
+COLOR,#ff0000
+
+#shapes for each field column; possible choices are
+#1: rectangle 
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: check mark
+FIELD_SHAPES,1,5,1,5,2
+
+#field labels
+FIELD_LABELS,PflA,PflB,no PflA found,no PflB found,full genome unavailable
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#define colors for each individual field column (if not defined all symbols will use the main dataset color, defined in COLOR above)
+FIELD_COLORS,#cc3333,#005bd3,#ed9090,#78aaeb,#007f66
+
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL,0
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN,0
+#align symbols to the end of each leaf label (individual dataset field will not be aligned to each other)
+#ALIGN_TO_LABELS,1
+
+#symbol height factor; Default symbol height will be slightly less than the available space between leaves, but you can set a multiplication factor here to increase/decrease it (values from 0 to 1 will decrease it, values above 1 will increase it)
+#HEIGHT_FACTOR,1
+
+#increase/decrease the spacing between individual levels, when there is more than one binary level defined 
+#SYMBOL_SPACING,10
+
+#display or hide the text labels above each field column
+#SHOW_LABELS,1
+
+#Example dataset with 4 columns (circle, left triangle, right triangle and rectangle):
+#FIELD_SHAPES,2,4,5,1
+#FIELD_LABELS,f1,f2,f3,f4
+#FIELD_COLORS,#ff0000,#00ff00,#ffff00,#0000ff
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+#node 9606 will have a filled circle, empty left triangle, nothing in the 3rd column and an empty rectangle
+#9606,1,0,-1,0
+
+Escherichia_coli_str._K-12_substr._MG1655,-1,-1,-1,-1,1
+Staphylococcus_epidermidis_ATCC_12228,-1,-1,-1,-1,1
+Aquifex_aeolicus_VF5,-1,-1,-1,-1,1
+Rhizobium_leguminosarum_bv._trifolii_WSM2304,-1,-1,-1,-1,1
+Butyrivibrio_proteoclasticus_B316,-1,-1,-1,-1,1
+Prevotella_multisaccharivorax_DSM_17128,-1,-1,-1,-1,1
+Bdellovibrio_bacteriovorus_str._Tiberius,-1,-1,-1,-1,1
+Rhodopirellula_maiorica_SM1,-1,-1,-1,-1,1
+Acidobacteriaceae_bacterium_KBS_89,-1,-1,-1,-1,1
+Candidatus_Sulfuricurvum_sp._RIFRC-1,1,1,-1,-1,-1
+Campylobacter_jejuni,1,1,-1,-1,-1
+Helicobacter_hepaticus_ATCC_51449,1,1,-1,-1,-1
+Helicobacter_pylori_26695,1,1,-1,-1,-1
+Helicobacter_acinonychis_str._Sheeba,1,1,-1,-1,-1
+Nitratiruptor_sp._SB155-2,1,1,-1,-1,-1
+Sulfurovum_sp._NBC37-1,-1,-1,1,1,-1
+Sulfurimonas_denitrificans_DSM_1251,1,1,-1,-1,-1
+Arcobacter_butzleri_RM4018,0,0,-1,-1,-1
+Campylobacter_fetus_subsp._fetus_82-40,1,1,-1,-1,-1
+Campylobacter_curvus_525.92,1,1,-1,-1,-1
+Campylobacter_hominis_ATCC_BAA-381,-1,-1,1,1,-1
+Campylobacter_concisus_13826,1,1,-1,-1,-1
+Campylobacter_lari_RM2100,1,1,-1,-1,-1
+Nautilia_profundicola_AmH,1,1,-1,-1,-1
+Sulfurospirillum_deleyianum_DSM_6946,1,1,-1,-1,-1
+Helicobacter_mustelae_12198,1,1,-1,-1,-1
+Arcobacter_nitrofigilis_DSM_7299,0,0,-1,-1,-1
+Sulfurimonas_autotrophica_DSM_16294,1,1,-1,-1,-1
+Helicobacter_canadensis_MIT_98-5491,1,1,-1,-1,-1
+Sulfuricurvum_kujiense_DSM_16994,1,1,-1,-1,-1
+Nitratifractor_salsuginis_DSM_16511,-1,-1,1,1,-1
+Wolinella_succinogenes_DSM_1740,1,1,-1,-1,-1
+Helicobacter_felis_ATCC_49179,1,1,-1,-1,-1
+Helicobacter_bizzozeronii_CIII-1,1,1,-1,-1,-1
+Sulfurimonas_gotlandica_GD1,1,1,-1,-1,-1
+Helicobacter_cetorum_MIT_00-7128,1,1,-1,-1,-1
+Sulfurospirillum_barnesii_SES-3,1,1,-1,-1,-1
+Arcobacter_sp._L,0,0,-1,-1,-1
+Helicobacter_cinaedi_PAGU611,1,1,-1,-1,-1
+Helicobacter_heilmannii_ASB1.4,1,1,-1,-1,-1
+Campylobacter_coli_CVM_N29710,1,1,-1,-1,-1
+Sulfurospirillum_multivorans_DSM_12446,1,1,-1,-1,-1
+Campylobacter_iguaniorum,1,1,-1,-1,-1
+Campylobacter_insulaenigrae_NCTC_12927,1,1,-1,-1,-1
+Campylobacter_sp._RM16704,1,1,-1,-1,-1
+Campylobacter_subantarcticus_LMG_24374,1,1,-1,-1,-1
+Campylobacter_volucris_LMG_24379,1,1,-1,-1,-1
+Campylobacter_peloridis_LMG_23910,1,1,-1,-1,-1
+Campylobacter_gracilis,-1,-1,1,1,-1
+Campylobacter_ureolyticus_RIGS_9880,-1,-1,1,1,-1
+Helicobacter_typhlonius,1,1,-1,-1,-1
+Sulfurospirillum_sp._UCH001,1,1,-1,-1,-1
+Sulfurospirillum_cavolei,1,1,-1,-1,-1
+Helicobacter_himalayensis,1,1,-1,-1,-1
+Campylobacter_hyointestinalis_subsp._hyointestinalis_LMG_9260,1,1,-1,-1,-1
+Campylobacter_hepaticus,1,1,-1,-1,-1
+Helicobacter_sp._MIT_01-6242,1,1,-1,-1,-1
+Sulfurospirillum_halorespirans_DSM_13726,1,1,-1,-1,-1
+Arcobacter_sp._LPB0137,0,0,-1,-1,-1
+Helicobacter_bilis,1,1,-1,-1,-1
+Campylobacter_pinnipediorum_subsp._pinnipediorum,1,1,-1,-1,-1
+Campylobacter_helveticus,1,1,-1,-1,-1
+Campylobacter_cuniculorum_DSM_23162_=_LMG_24588,1,1,-1,-1,-1
+Campylobacter_sp._RM6137,1,1,-1,-1,-1
+Campylobacter_sp._RM12175,1,1,-1,-1,-1
+Campylobacter_sp._RM8964,1,1,-1,-1,-1
+Campylobacter_sp._NCTC_13003,1,1,-1,-1,-1
+Campylobacter_lanienae_NCTC_13004,1,1,-1,-1,-1
+Sulfurospirillum_sp._SL2-1,1,1,-1,-1,-1
+Sulfurospirillum_sp._SL2-2,1,1,-1,-1,-1
+Campylobacter_sputorum_bv._faecalis_CCUG_20703,1,1,-1,-1,-1
+Campylobacter_avium_LMG_24591,1,1,-1,-1,-1
+Sulfurospirillum_sp._JPD-1,1,1,-1,-1,-1
+Helicobacter_apodemus,1,1,-1,-1,-1
+Arcobacter_halophilus,0,0,-1,-1,-1
+Arcobacter_mytili_LMG_24559,0,0,-1,-1,-1
+Arcobacter_bivalviorum,0,0,-1,-1,-1
+Arcobacter_trophiarum_LMG_25534,0,0,-1,-1,-1
+Arcobacter_suis_CECT_7833,0,0,-1,-1,-1
+Arcobacter_skirrowii_CCUG_10374,0,0,-1,-1,-1
+Arcobacter_marinus,0,0,-1,-1,-1
+Arcobacter_ellisii,0,0,-1,-1,-1
+Arcobacter_molluscorum_LMG_25693,0,0,-1,-1,-1
+Helicobacter_saguini,1,1,-1,-1,-1
+Arcobacter_cryaerophilus_D2610,0,0,-1,-1,-1
+Arcobacter_sp._PSE-93,0,0,-1,-1,-1
+Arcobacter_pacificus,0,0,-1,-1,-1
+Arcobacter_thereius_LMG_24486,0,0,-1,-1,-1
+Arcobacter_porcinus,0,0,-1,-1,-1
+Cetia_pacifica,1,1,-1,-1,-1
+Caminibacter_mediatlanticus_TB-2,1,1,-1,-1,-1
+Campylobacter_upsaliensis,1,1,-1,-1,-1
+Helicobacter_pullorum,1,1,-1,-1,-1
+Helicobacter_cholecystus,1,1,-1,-1,-1
+Campylobacter_showae,1,1,-1,-1,-1

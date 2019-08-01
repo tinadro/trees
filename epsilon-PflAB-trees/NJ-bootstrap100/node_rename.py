@@ -24,8 +24,7 @@ def lookup_by_names(tree):
 #reference table of accession nrs and strain names
 
 def get_reference_table(query):
-	parentdir = dirname(dirname(abspath(__file__)))
-	table = parentdir+'/'+query+'-protein-info.xlsx'
+	table = '../../'+query+'-protein-info.xlsx'
 	ref = pd.read_excel(table, sheet_name='non-redundant-hits')
 	return ref
 

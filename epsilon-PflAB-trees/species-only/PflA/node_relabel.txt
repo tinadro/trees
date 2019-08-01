@@ -1,0 +1,99 @@
+LABELS
+#use this template to change the leaf labels, or define/change the internal node names (displayed in mouseover popups)
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+105917824.,Arcobacter_cryaerophilus
+115428934.,Arcobacter_trophiarum
+125296901.,Arcobacter_skirrowii
+066182953.,Arcobacter_thereius
+066176640.,Arcobacter_porcinus
+014469274.,Arcobacter_butzleri
+118887691.,Arcobacter_suis
+076088090.,Arcobacter_sp._LPB0137
+122894088.,Arcobacter_sp._PSE-93
+130234016.,Arcobacter_pacificus
+114838372.,Arcobacter_bivalviorum
+013136272.,Arcobacter_nitrofigilis
+114842575.,Arcobacter_mytili
+099342022.,Arcobacter_molluscorum
+101185776.,Arcobacter_halophilus
+099310395.,Arcobacter_marinus
+014475078.,Arcobacter_sp._L
+118918128.,Arcobacter_ellisii
+015902190.,Nautilia_profundicola
+123352784.,Cetia_pacifica
+138323044.,Caminibacter_mediatlanticus
+BBG66647.1,Hydrogenimonas_sp.
+013327617.,Sulfurimonas_autotrophica
+011373428.,Sulfurimonas_denitrificans
+EHP30220.1,Sulfurimonas_gotlandica
+013459143.,Sulfuricurvum_kujiense
+AFV96557.1,Candidatus_Sulfuricurvum_sp._RIFRC-1
+012855956.,Sulfurospirillum_deleyianum
+014768382.,Sulfurospirillum_barnesii
+060826812.,Sulfurospirillum_cavolei
+067173039.,Sulfurospirillum_sp._UCH001
+025343415.,Sulfurospirillum_multivorans
+069476982.,Sulfurospirillum_halorespirans
+SL2-2_0874,Sulfurospirillum_sp._SL2-2
+SL2-1_0874,Sulfurospirillum_sp._SL2-1
+096045557.,Sulfurospirillum_sp._JPD-1
+094324664.,Campylobacter_avium
+085296601.,Campylobacter_cuniculorum
+020974222.,Campylobacter_coli
+002851328.,Campylobacter_jejuni
+066778873.,Campylobacter_hepaticus
+082200424.,Campylobacter_helveticus
+027303914.,Campylobacter_upsaliensis
+049984606.,Campylobacter_peloridis
+052245033.,Campylobacter_sp._RM16704
+052243116.,Campylobacter_lari
+052243695.,Campylobacter_subantarcticus
+052251990.,Campylobacter_insulaenigrae
+052243195.,Campylobacter_volucris
+089193849.,Campylobacter_sputorum
+063997629.,Campylobacter_hyointestinalis_subsp._hyointestinalis
+086302036.,Campylobacter_sp._NCTC_13003
+086298238.,Campylobacter_sp._RM6137
+100590910.,Campylobacter_lanienae
+086334093.,Campylobacter_sp._RM8964
+086256543.,Campylobacter_sp._RM12175
+002848256.,Campylobacter_fetus_subsp._fetus
+038452786.,Campylobacter_iguaniorum
+122862156.,Campylobacter_showae
+078424202.,Campylobacter_pinnipediorum_subsp._caledonicus
+035144825.,Campylobacter_concisus
+011991718.,Campylobacter_curvus
+066341047.,Helicobacter_sp._MIT_01-6242
+104724659.,Helicobacter_cholecystus
+066388901.,Helicobacter_himalayensis
+014666517.,Helicobacter_cinaedi
+041309136.,Helicobacter_hepaticus
+058122103.,Helicobacter_typhlonius
+052062782.,Helicobacter_saguini
+077389763.,Helicobacter_bilis
+013023716.,Helicobacter_mustelae
+014660569.,Helicobacter_cetorum
+041600164.,Helicobacter_acinonychis_str._Sheeba
+096532846.,Helicobacter_pylori
+013469285.,Helicobacter_felis
+015106807.,Helicobacter_heilmannii
+049770622.,Wolinella_succinogenes
+108910520.,Helicobacter_apodemus
+006656841.,Helicobacter_canadensis
+104745334.,Helicobacter_pullorum
