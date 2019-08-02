@@ -1,4 +1,4 @@
- 97 2583
+ 96 2583
 b0201      ---------- ---------- ---------- ---------- ----------
 SEr03      ---------- ---------- ---------- ---------- ----------
 aq_r03     ---------- ---------- ---------- ---------- ----------
@@ -9,7 +9,6 @@ BDT_RS0414 ---------- ---------- ---------- ---------- ----------
 RMSM_RS027 ---------- ---------- ---------- ---------- ----------
 G003_RS261 ---------- ---------- ---------- ---------- ----------
 B649_r1191 ---------- ---------- ---------- ---------- ----------
-YH65_00205 ---------- ---------- ---------- ---------- ----------
 RB96_02165 ---------- ---------- ---------- ---------- ----------
 HH_RS04845 ---------- ---------- ---------- ---------- ----------
 HPr04      ---------- ---------- ---------- ---------- ----------
@@ -107,7 +106,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- -----aaatt gaagggtttg atcctggctc agaatgaacg
            ---------- ---------- -gagagtttg atcctggctc agaatcaacg
            ---------- ------ttat ggagagtttg atcctggctc agagtgaacg
-           ---------- ---ttttaat ggagagtttg atcctggctc agagtgaacg
            ---------- ---tttttat ggagagtttg atcctggctc agagtgaacg
            ---------- ---tttttat ggagagtttg atcctggctc agagtgaacg
            ---------- -----tttat ggagagtttg atcctggctc agagtgaacg
@@ -205,7 +203,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ttggcggcgt ggattaggca tgcaagtcgt acgagaaccc a---------
            ctggcggcgt gcctaacaca tgcaagtcgc acgagaaagg ----------
            ctggcggcgt gcctaacaca tgcaagtcga acgatgatgg ----------
-           ctggcggcgt gcttaacaca tgcaagtcga acgagaacgg ----------
            ctggcggcgt gcctaataca tgcaagtcga acgatgaagc ----------
            ctggcggcgt gcctaataca tgcaagtcga acgatgaat- ----------
            ctggcggcgt gcctaataca tgcaagtcga acgatgaag- ----------
@@ -303,7 +300,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- attagc---- ------ttgc taaga----g ggggacagtg
            --------gt agcaat---- ---------- ------acct gagtaaagtg
            ---------- -agagc---- ------ttgc tctcc----- -tgattagtg
-           ---------c tctagc---- ------ttgc taga--gtgt cagctaagtg
            --------t- tctagc---- ------ttgc tagaa-gtg- --gattagtg
            --------ct tctagc---- ------ttgc tagaa-gtg- --gattagtg
            --------ct tctagc---- ------ttgc tagagtgct- --gattagtg
@@ -401,7 +397,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            gcgaaaggga gagtaacgcg tgg-ttacat gccctcgagt tcgggatagt
            gcgcacgggt gagtaacacg tgaattatct acctccgagt ggggaataac
            gcgcacgggt gagtatacca tagataatgt acctcttagt tcgggatagc
-           gcggacgggt gagtaatgta tagttaattt gccccttgga gagggatagc
            gcgcacgggt gagtaaggta tagttaatct gccctacaca agaggacaac
            gcgcacgggt gagtaatgca taggttatgt gccctttagt ctgggatagc
            gcgcacgggt gagtaacgca taggttatgt gcctcttagt ttgggatagc
@@ -499,7 +494,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            aacgggaaac tgttagtaat accgaataat -atctttgga tcaaagg---
            tgagagaaat cttagctaat accgcataac -acttacgag tcaaagca--
            cactggaaac ggtgattaat accggatact -ccttcttac tttaagg---
-           cactggaaac ggtgattaat acctcatact -ccttctatg ttaatca---
            agttggaaac gactgctaat actctatact -cctgcttaa cacaagt---
            cactggaaac ggtgattaat actggatact -ccctacgg- ----------
            cattggaaac gatgattaat accagatact -ccctacgg- ----------
@@ -587,7 +581,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            agttggaaac gactgctaat accttatact -ccgtatcta tataagt---
            ggctggaaac ggccgctaat accccatatg -cctttcata cagaagt---
 
-           ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -768,7 +761,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
-           ---------- ---------- ---------- ---------- ----------
            tctaaagatt aaaaacatag aatctaggat tctataaact ttaaaagatt
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -783,7 +775,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
 
-           ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -964,7 +955,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
-           ---------- ---------- ---------- ---------- ----------
            cacccaccgc cctttttggt ggagtttgta gaatcttgtt ttagattcta
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -979,7 +969,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
 
-           ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -1160,7 +1149,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
-           ---------- ---------- ---------- ---------- ----------
            ttctaaagat taagaacgaa tcttttgaga attaagattc taatggttta
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -1175,7 +1163,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
 
-           ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -1356,7 +1343,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
-           ---------- ---------- ---------- ---------- ----------
            ataaaacttt aaaaggattg tggttttgta gtggatgata aaaaaatcaa
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -1371,7 +1357,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
 
-           ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -1552,7 +1537,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
-           ---------- ---------- ---------- ---------- ----------
            atcttgtttt tagattctaa agattttttg gatttaaaaa gattctaaag
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -1567,7 +1551,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
 
-           ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -1675,7 +1658,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- --------g- ----------
            ---------- ---------- ---------- ---------- -taagtcggg
-           ---------- ---------- ---------- ---------- -tagttggga
            ---------- ---------- ---------- ---------- -tgagtaggg
            ---------- ---------- ---------- ---------- -------ggg
            ---------- ---------- ---------- ---------- -------ggg
@@ -1773,7 +1755,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            aaagt----- ---------- ---------- ---------- ----------
-           aacgt----- ---------- ---------- ---------- ----------
            aaag------ ---------- ---------- ---------- ----------
            aaa-g----- ---------- ---------- ---------- ----------
            aaaga----- ---------- ---------- ---------- ----------
@@ -1861,7 +1842,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            aaag------ ---------- ---------- ---------- ----------
            aaacgg---- ---------- ---------- ---------- ----------
 
-           ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -1978,7 +1958,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
-           ---------- ---------- ---------- ---------- ----------
            acctaaa--- ------ttta tg-------- -atttatgac aagcgaagct
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -2057,7 +2036,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------t t--------- ----------
 
-           ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -2174,7 +2152,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
-           ---------- ---------- ---------- ---------- ----------
            -cgctcgtaa agactagctt ggctagtctg cgaagtcgta atatttaatt
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -2253,7 +2230,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
 
-           ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
            ---------- ---------- ---------- ---------- ----------
@@ -2361,7 +2337,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ----gattcc gctcgaggat tggaccgcgt actattagct tgttggtgag
            ----caatgc gcttggagag gagttcgcgg ccgattagtt agttggcggg
            ----tttttc gctaagagat cagtctatgt cctatcagct agttggtgag
-           ----tttttc gccaagggat aagattatat ggtatcaggt agttggtggg
            ----tttttc ggtgtaggat gagactatat agtatcagct agttggtaag
            ----tttttc gctaaaggat cagcctatgt cctatcagct tgttggtgag
            ----tttatc gctaagagat cagcctatgt cctatcagct tgttggtaag
@@ -2459,7 +2434,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            gtaatggctc accaaggctg cgatggttac cgggtgtgag agcatggccc
            gtaatggccc accaagacga tgatcggtat ccggcctgag agggcgcacg
            gtaatggctc accaaggcta tgacgggtat ctggtttgag aggatgatca
-           gtaagagcct accaagccaa tgacgcctag ctggtctgag aggatgatca
            gtaatggctt accaaggcta tgacgcttaa ctggtctgag aggatgatca
            gtaatggctc accaaggcta tgacgggtat ccggcctgag agggtgatcg
            gtaatggctt accaaggcta tgacgggtat ccggcctgag agggtgaacg
@@ -2557,7 +2531,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ggctcactgg gactgagaca ctgcccagac acctacgggt ggctgcagtc
            gacacactgg aactgaaaca cggtccagac tcctacggga ggcagcagtg
            gacacactgg aactgagaca cggtccagac tcctacggga ggcagcagtg
-           gccacactgg aactgagaca cggtccagac tcctacggga ggcagcagtg
            gtcacactgg aactgagaca cggtccagac tcctacggga ggcagcagta
            gacacactgg aactgagaca cggtccagac tcctacggga ggcagcagta
            gacacactgg aactgagaca cggtccagac tcctacggga ggcagcagta
@@ -2655,7 +2628,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            gagaatcttt ggcaatgggc gaaagcctga ccaagcgacg ccgcgtgcgg
            gggaattttg cgcaatgggg gaaaccctga cgcagcaacg ccgcgtggag
            aggaatattg cacaatggag gaaactctga tgcagcaacg ccgcgtggag
-           gggaatattg cacaatggag gaaactctga tgcagcaacg ccgcgtggag
            gggaatattg cgcaatgggg gaaaccctga cgcagcaacg ccgcgtggag
            gggaatattg ctcaatgggg gaaaccctga agcagcaacg ccgcgtggag
            gggaatattg ctcaatgggg gaaaccctga agcagcaacg ccgcgtggag
@@ -2753,7 +2725,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            gatgaaggcc ct-cgggttg taaaccgctg tcagaagcta gg-aaatgct
            gatgaaatat ct-tggtatg taaactcctt tcgatgggga ag-att----
            gatgacgcat tt-cggtgtg taaactcctt ttaagaggga ag-ata----
-           gatgacgcat tt-cggtgtg taaactcctt ttatatggga ag-ata----
            gatgacactt tt-cggagcg taaactcctt ttcttaggga agaatt----
            gatgaaggtt tt-aggattg taaactcctt ttgttagaga ag-att----
            gatgaaggtt tt-aggattg taaactcctt ttgttagaga ag-ata----
@@ -2851,7 +2822,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            aaggggttat cctcttag-- --tttgaccg atcttcagag gaaggacggg
            ---------- ---------- --atgacggt acccatagaa gaagccccgg
            ---------- ---------- --atgacggt acctcttgaa taagcaccgg
-           ---------- ---------- --atgacggt accatatgaa taagcaccgg
            ---------- ---------- --ctgacggt acctaaggaa taagcaccgg
            ---------- ---------- --atgacggt atctaacgaa taagcaccgg
            ---------- ---------- --atgacggt atctaacgaa taagcaccgg
@@ -2962,7 +2932,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ctaactccgt gccagcagcc gcggtaatac -ggagggtgc aagcgttact
            ctaactccgt gccagcagcc gcggtaatac -ggagggtgc aagcgttact
            ctaactccgt gccagcagcc gcggtaatac -ggagggtgc aagcgttact
-           ctaactccgt gccagcagcc gcggtaatac -ggagggtgc aagcgttact
            ctaactccgt gccagcagcc gcggtaatac -ggggggagc gagcgttact
            ctaactccgt gccagcagcc gcggtaatac -ggagggtgc aagcgttact
            ctaactccgt gccagcagcc gcggtaatac -ggagggtgc aagcgttact
@@ -3047,7 +3016,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            cggtatcact gggcttaaag cgttcgtagg cggcctagaa ggtgagatgt
            cggatttatt gggcgtaaag ggtgcgtagg cggtttggca agtctgatgt
            cggaatcact gggcgtaaag ggtgcgtagg ctggcttcta agtcagatgt
-           cggaatcact gggcgtaaag cgcgcgcagg cggcctttta agttggatgt
            cggaatcact gggcgtaaag ggcgcgtagg cggattatca agtctcttgt
            cggaatcact gggcgtaaag agtgcgtagg cggggtaata agtcagatgt
            cggaatcact gggcgtaaag agcgcgtagg cgggatagtc agtcaggtgt
@@ -3145,7 +3113,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            gaaagcccac ggcccaaccg tggaactgcg tttcaaacca ctaggctcga
            gaaatctatg ggctcaaccc atagtctgca tcagaaactg ccgggcttga
            gaaatccaat ggcttaacca ttgaactgca tttgaaactg ggagcctaga
-           gaaagcctat ggctcaacca tagaactgca tccaaaacta ttaggctaga
            gaaatctaat ggcttaacca ttaaactgct tgggaaactg atagtctaga
            gaaatcctgt agcttaacta cagaactgca tttgaaactg ttactctgga
            gaaatcctat ggcttaacca tagaactgca tttgaracta ctattctaga
@@ -3243,7 +3210,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ggaagacagg ggtgatggga acttatggtg gagcggtgaa atgcgttgat
            gtatgggaga ggtgagtgga atttccggtg tagcggtgaa atgcgtagat
            gttcagaagg ggcagatgga attagtggtg taggggtaaa atccgtagat
-           gtctgggagg ggaagatgga attagttgtg taggggtaaa atccgtagag
            gtgagggaga ggcagatgga attggtggtg taggggtaaa atccgtagat
            gtgtgggaga ggtaggtgga attcttggtg taggggtaaa atccgtagag
            gtgtgggaga ggtaggtgga attcttggtg taggggtaww atccgtagag
@@ -3341,7 +3307,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            atcataggga acaccggtgg cgaaggcgca tcactgggtc ttttctgacg
            atcggaagga acacctgtgg cgaaagcggc tcactggacc ataactgacg
            atcactagga atatcaaaag cgaaggcgat ctgctgggat gatactgacg
-           ataactagga ataccaaaag cgaaggcgat cttctggaac agtactgacg
            atcaccaaga atacccattg cgaaggcgat ctgctggaac tcaactgacg
            atcaagagga atactcattg cgaaggcgac ctgctggaac attactgacg
            atcaagagga atactcattg cgwaggcgac ctgctggaac attactgacg
@@ -3439,7 +3404,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ctga-ggaac gaaagctagg gtagcgaacg ggattagata ccccggtagt
            ctga-tgcac gaaagctagg ggagcaaaca ggattagata ccctggtagt
            ctga-ggcac gaaagcgtgg ggagcaaaca ggattagata ccctggtagt
-           ctga-ggcgc gaaagcgtgg ggagcaaaca ggattagata ccctggtagt
            ctaa-ggcgc gaaagcgtgg ggagcaaaca ggattagata ccctggtagt
            ctga-tgcac gaaagcgtgg ggagcaaaca ggattagata ccctggtagt
            ctgattgcgc gaaagcgtgg ggagcaaaca ggattagata ccctggtagt
@@ -3537,7 +3501,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            cctagccgta aacgatgagc actgggttga gg-ggacttt cacatcctct
            cctagcccta aacgatgatt gcttggtgtg gcaggtaccc -aatcctgcc
            ccacgcccta aacgatgaat gctagtcgtc gg-ggagctc -gtctcttcg
-           ccacgcccta aacgatgaat gttagtcgtc gg-aggccta -gtgtcttcg
            ccacgcccta aacgatgtac actagttgtt gg-ggtgcta -gtcatctca
            ccacgcccta aacgatggat gctagttgtt gc-cttgctt -gtcagggca
            ccacgcccta aacgatggat gctagttgtt gg-agggctt -agttttcca
@@ -3635,7 +3598,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            cggccgtagc gaaagcgtta agtgctccgc ctggggagta tggtcgcaag
            gtgccgaagc taacgcgata agcaatccgc ctggggagta cggtcgcaag
            gtgatgcact taacagatta agcattccgc ctggggagta cggtcgcaag
-           gtgatgcagc taacgcatta aacattccgc ctggggagta cggtcgcaag
            gtaatgcagc taacgcatta agtgtaccgc ctggggagta cggtcgcaag
            gtaatgcagc taacgcatta agcatcccgc ctggggagta cggtcgcaag
            gtaatgcagc taacgcatta agcatcccgc ctggggagta cggtcgcaag
@@ -3732,7 +3694,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            attaaaactc aaagaaattg acgggggccc gcacaagcgg tggagcatgt
            gctgaaactc aaaggaattg acgggggctc acacaagcgg tggaggatgt
            gctgaaactc aaaggaattg acgggggccc gcacaagcgg tggagcatgt
-           attaaaactc aaaggaatag acggggaccc gcacaagtgg tggagcatgt
            attaaaactc aaaggaatag acggggaccc gcacaagtgg tggagcatgt
            attaaaactc aaaggaatag acggggaccc gcacaagcgg tggagcatgt
            attaaaactc aaaggaatag acggggaccc gcacaagcgg tggagcatgt
@@ -3831,7 +3792,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ggcttaattc gaggctacgc gaagaacctt atcctagact tgacatgctt
            ggtttaattc gacgcaacgc gaagaacctt a-cctgggct cgaaatgtag
            ggtttaattc gaagatacac gaagaacctt a-cctggcct tgacatggta
-           ggtttaattc gaagatacgc gaagaacctt a-cctagcct tgacattgag
            ggtttaattc gaagatacgc gaagaacctt a-cctgggct tgatatccta
            ggtttaattc gaagatacgc gaagaacctt a-cctaggct tgacattgat
            ggtttaattc gaagatacac gaagaacctt a-cctaggct tgacattgag
@@ -3929,7 +3889,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            g-agaatccc tatgaaagta gagagtgcc- ---cttc-gg ggag-----c
            tggaatccgg cagaaacgtc ggcgtc---- ---tagc-aa taga-----c
            g-gaaccctt aagagattag ggggtg-cta g--cttg-ct agaa-----c
-           a-gaatcctg tagagatacg ggagtg---- ---cctt-cg ggag-----c
            a-gaacctta tagagatatg agggtg-cta g--cttg-ct agaa-----c
            a-gaatctac tagagatagt ggagtg-cc- ---cttc-gg ggag-----c
            a-gaatccgc tagaaatagt ggagtgtctg g--cttg-cc agac-----c
@@ -4027,7 +3986,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            tcttgcacag gtgctgcatg gctgtcgtca gctcgtgtcg tgagatgtcg
            cgctatatag gtgctgcatg gctgtcgtca gctcgtgtcg tgagatgttg
            ctacacacag gtgctgcacg gctgtcgtca gctcgtgtcg tgagatgttg
-           tcgaaaacag gtgctgcacg gctgtcgtca gctcgtgtcg tgagatgttg
            ttagagacag gtgctgcacg gctgtcgtca gctcgtgtcg tgagatgttg
            ttgaaaacag gtgctgcacg gctgtcgtca gctcgtgtcg tgagatgttg
            ttgaaaacag gtgctgcacg gctgtcgtca gctcgtgtcg tgagatgttg
@@ -4125,7 +4083,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ggttaagtcc cttaacgagc gaaaccctta tctctagttg ccagcgg-gt
            ggttaagtcc cgcaacgagc gcaaccctta tcttcagttg ctacca--tt
            ggttaagtcc cgcaacgagc gcaaccctcg tcgttagttg ctaacag-tt
-           ggttaagtcc cgcaacgagc gcaaccctcg tcactagtta ctaacgg-tt
            ggttaagtcc cgcaacgagc gcaacccacg tatttagttg ctaacgg-tt
            ggttaagtcc cgcaacgagc gcaaccctcg tccttagttg ctagcag-tt
            ggttaagtcc cgcaacgagc gcaacccctt ttcttagttg ctaacag-gt
@@ -4223,7 +4180,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            aatgccgggg actctagaga gactgccggt gtcaaa-ccg gaggaaggtg
            ta-gttgagc actctgacga aaccgcctcg gataac-ggg gaggaaggtg
            cg-gctgagc actctaacga gactgccttc g-taag-gag gaggaaggtg
-           cg-gccgagg actctagtga gactgccttc g-caag-gag gaggaaggtg
            cg-gccgagc actctaaata gactgccttc g-taag-gag gaggaaggtg
            cg-gctgagc actctaagga gactgccttc g-taag-gag gaggaaggtg
            tatgctgaga actctaagga tactgcctcc g-taag-gag gaggaaggtg
@@ -4321,7 +4277,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            gggatgacgt caagtcctca tggcctttat gtctagggct gcacacgtcc
            gggatgacgt caagtcctca tggcctttat gtccagggct acacacgtgc
            aggacgacgt caagtcatca tggcccttac ggccagggct acacacgtgc
-           aggacgacgt caagtcatca tggcccttac ggctagggca acacacgtgc
            tggacgacgt caagtcatca tggcccttat gcccagggcg acacacgtgc
            aggacgacgt caagtcatca tggcccttac gcctagggct acacacgtgc
            gggacgacgt caagtcatca tggcccttac gcctagggct acacacgtgc
@@ -4419,7 +4374,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            tacaatggta cggacagacg gaagcaatac cgcgaggtgg agcaaatc-c
            tacaatggcc ggtacaaacc gctgcaaacc cgcgaggggg agctaatc-g
            tacaatgggg cgtacaaaga gctgcaatac cgcgaggtgg agccaatctc
-           tacaatgggc aggacaatga gacgcgatac cgcgaggtgg agcaaatc-t
            tacaatggca tatacaatga gacgcaatac cgcgaggtgg agcaaatc-t
            tacaatgggg cgcacaaaga ggagcaatat cgcgaggtgg agcaaatc-t
            tacaatgggg tgcacaaagm gaagcaatac tgcgaagtgg agccaatc-t
@@ -4517,7 +4471,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            tagaaaccgt gcctcagttc ggattgcagg ctgcaactcg cctgcatgaa
            gaaaaagccg gcctcagttc ggattggagt ctgcaactcg actccatgaa
            tt-aaagcgt ctctcagttc ggattgttct ctgcaactcg agaacatgaa
-           at-aaacctg ttctcagttc ggattgtagt ctgcaactcg actacatgaa
            at-aaaatat gtcccagttc ggattgttct ctgcaactcg agagcatgaa
            ca-aaaacgt ctctcagttc ggattgtagt ctgcaactcg actacatgaa
            tc-aaaacac ctctcagttc ggattgtagg ctgcaactcg cctgcatgaa
@@ -4614,7 +4567,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            gttggaatcg ctagtaatcg cggatcag-a atgccgcggt gaatacgttc
            gccggaatcg ctagtaatcg caggtcag-c atactgcggt gaatgtgttc
            gctggaatcg ctagtaatcg tggatcag-c atgccacggt gaatacgttc
-           gctggaatca ctagtaatcg tagatcagct atgctacggt gaatacgttc
            gctggaatca ctagtaatcg tagatcagct atgctacggt gaatacgttc
            gccggaatcg ctagtaatcg tagatcagcc atgctacggt gaatacgttc
            gctggaatcg ctagtaatcg tgaatcagcc atgtcacggt gaatacgttc
@@ -4713,7 +4665,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ctgagccttg tacacaccgc ccgtcaagcc acgaaagttg ggagggcccg
            ccgggccttg tacacaccgc ccgtcacatc acgaaagtgg gttgcactag
            ccgggtcttg tactcaccgc ccgtcacacc atgggagttg atttcacccg
-           ccgggtcttg tactcaccgc ccgtcacacc atgggagttg atttcacccg
            ccgggtcttg tactcaccgc ccgtcacacc atgggagttg atttcactcg
            ccgggtcttg tactcaccgc ccgtcacacc atgggagttg tattcgcctt
            ccgggtcttg tactcaccgc ccgtcacacc atgggagttg tgtttgcctt
@@ -4811,7 +4762,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            aagtcgccaa -gctaactcg c--------- -aagagaggc aggcgccgaa
            aagtcggtgc -gctaaccgc a--------- ---aggaagc agccgcccaa
            aaatcgggat -gccaaact- ---------- -------ggc taccgcttac
-           aagcggggaa -gctaaact- ---------- -------ggc taccctccac
            aagccggaat -actaaact- ---------- -------agt taccgtccac
            aagtcgggat -actaaatt- ---------- -------ggt taccgcccac
            aagtcaggat -gctaaatt- ---------- -------ggc tactgcccac
@@ -4909,7 +4859,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            ggtcagctcg acaattggga ctaagtcgta acaaggtagc cgtaggggaa
            ggtgtaattc atgattgggg tgaagtcgta acaaggtagc cgtaggagaa
            ggtggaatta gcgactgggg tgaagtcgta acaaggtaac cgtaggagaa
-           ggtgggatca gcgactgggg tgaagtcgta acaaggtaac cgtaggagaa
            agtggaatca gcgactgggg tgaagtcgta acaaggtaac cgtaggagaa
            ggcggatgca gcgactgggg tgaagtcgta acaaggtaac cgtaggtgaa
            ggcacacaca gcgactgggg tgaagtcgta acaaggtaac cgta-gtgaa
@@ -5007,7 +4956,6 @@ NNO_R0029  ---------- ---------- ---------- ---------- ----------
            cctgcggctg gatcacctcc tttcta---- ---
            cctgcggctg gatcacctcc tttctaa--- ---
            cctgcggttg gatcacctcc tttctaag-- ---
-           cctgcggttg gatcacctcc tttc------ ---
            cctgcggttg gatcacctcc tttcta---- ---
            cctgcggttg gatcacctcc tttcta---- ---
            cctgcggttg gatcacctcc t--------- ---
