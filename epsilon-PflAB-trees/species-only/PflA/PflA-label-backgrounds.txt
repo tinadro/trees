@@ -1,0 +1,141 @@
+TREE_COLORS
+#use this template to define branch colors and styles, colored ranges and label colors/font styles/backgrounds
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+#First 3 fields define the node, type and color
+#Possible types are:
+#'range': defines a colored range (colored background for labels/clade)
+#'clade': defines color/style for all branches in a clade
+#'branch': defines color/style for a single branch
+#'label': defines font color/style for the leaf label
+#'label_background': defines the leaf label background color
+
+#The following additional fields are required:
+#for 'range', field 4 defines the colored range label (used in the legend)
+
+#The following additional fields are optional:
+#for 'label', field 4 defines the font style ('normal',''bold', 'italic' or 'bold-italic') and field 5 defines the numeric scale factor for the font size (eg. with value 2, font size for that label will be 2x the standard size)
+#for 'clade' and 'branch', field 4 defines the branch style ('normal' or 'dashed') and field 5 defines the branch width scale factor (eg. with value 0.5, branch width for that clade will be 0.5 the standard width)
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+#NODE_ID TYPE COLOR LABEL_OR_STYLE SIZE_FACTOR
+
+#Examples
+#internal node with solid branches colored blue and twice the standard width
+#9031|9606 clade #0000ff normal 2
+#internal node with dashed branches colored red and one half the standard width
+#601|340 clade #ff0000 dashed 0.5
+#a single internal branch colored green, dashed and 5 times the normal width
+#915|777 branch #00ff00 dashed 5
+
+#colored range covering all leaves of an internal node,  colored red and with label 'Eukaryota'
+#184922|9606 range #ff0000 Eukaryota
+#examples of colored ranges from iTOL's Tree of Life
+#2190|2287 range #aaffaa Archaea
+#623|1502 range #aaaaff Bacteria
+
+#leaf label for node 9606 will be displayed in green, bold and twice the regular font size
+#9606 label #00ff00 bold 2
+
+#leaf label for node 9031 will be displayed in yellow, bold italic and half the regular font size
+#9031 label #ffff00 bold-italic 0.5
+
+#leaf label for node 8015 will be displayed in blue
+#8015 label #0000ff
+
+#leaf label for node 9606 will have a semi-transparent red background
+#9606 label_background rgba(255,0,0,0.5)
+
+Arcobacter_cryaerophilus,label,#d5f5e3
+Arcobacter_trophiarum,label,#d5f5e3
+Arcobacter_skirrowii,label,#d5f5e3
+Arcobacter_thereius,label,#d5f5e3
+Arcobacter_porcinus,label,#d5f5e3
+Arcobacter_butzleri,label,#d5f5e3
+Arcobacter_suis,label,#d5f5e3
+Arcobacter_sp._LPB0137,label,#d5f5e3
+Arcobacter_sp._PSE-93,label,#d5f5e3
+Arcobacter_pacificus,label,#d5f5e3
+Arcobacter_bivalviorum,label,#d5f5e3
+Arcobacter_nitrofigilis,label,#d5f5e3
+Arcobacter_mytili,label,#d5f5e3
+Arcobacter_molluscorum,label,#d5f5e3
+Arcobacter_halophilus,label,#d5f5e3
+Arcobacter_marinus,label,#d5f5e3
+Arcobacter_sp._L,label,#d5f5e3
+Arcobacter_ellisii,label,#d5f5e3
+Nautilia_profundicola,label,#ffffff
+Cetia_pacifica,label,#ffffff
+Caminibacter_mediatlanticus,label,#ffffff
+Hydrogenimonas_sp.,label,#ffffff
+Sulfurimonas_autotrophica,label,#ffffff
+Sulfurimonas_denitrificans,label,#ffffff
+Sulfurimonas_gotlandica,label,#ffffff
+Sulfuricurvum_kujiense,label,#ffffff
+Candidatus_Sulfuricurvum_sp._RIFRC-1,label,#ffffff
+Sulfurospirillum_deleyianum,label,#fde5e6
+Sulfurospirillum_barnesii,label,#fde5e6
+Sulfurospirillum_cavolei,label,#fde5e6
+Sulfurospirillum_sp._UCH001,label,#fde5e6
+Sulfurospirillum_multivorans,label,#fde5e6
+Sulfurospirillum_halorespirans,label,#fde5e6
+Sulfurospirillum_sp._SL2-2,label,#fde5e6
+Sulfurospirillum_sp._SL2-1,label,#fde5e6
+Sulfurospirillum_sp._JPD-1,label,#fde5e6
+Campylobacter_avium,label,#ffffcc
+Campylobacter_cuniculorum,label,#ffffcc
+Campylobacter_coli,label,#ffffcc
+Campylobacter_jejuni,label,#ffffcc
+Campylobacter_hepaticus,label,#ffffcc
+Campylobacter_helveticus,label,#ffffcc
+Campylobacter_upsaliensis,label,#ffffcc
+Campylobacter_peloridis,label,#ffffcc
+Campylobacter_sp._RM16704,label,#ffffcc
+Campylobacter_lari,label,#ffffcc
+Campylobacter_subantarcticus,label,#ffffcc
+Campylobacter_insulaenigrae,label,#ffffcc
+Campylobacter_volucris,label,#ffffcc
+Campylobacter_sputorum,label,#ffffcc
+Campylobacter_hyointestinalis_subsp._hyointestinalis,label,#ffffcc
+Campylobacter_sp._NCTC_13003,label,#ffffcc
+Campylobacter_sp._RM6137,label,#ffffcc
+Campylobacter_lanienae,label,#ffffcc
+Campylobacter_sp._RM8964,label,#ffffcc
+Campylobacter_sp._RM12175,label,#ffffcc
+Campylobacter_fetus_subsp._fetus,label,#ffffcc
+Campylobacter_iguaniorum,label,#ffffcc
+Campylobacter_showae,label,#ffffcc
+Campylobacter_pinnipediorum_subsp._caledonicus,label,#ffffcc
+Campylobacter_concisus,label,#ffffcc
+Campylobacter_curvus,label,#ffffcc
+Helicobacter_sp._MIT_01-6242,label,#e8daef
+Helicobacter_cholecystus,label,#e8daef
+Helicobacter_himalayensis,label,#e8daef
+Helicobacter_cinaedi,label,#e8daef
+Helicobacter_hepaticus,label,#e8daef
+Helicobacter_typhlonius,label,#e8daef
+Helicobacter_saguini,label,#e8daef
+Helicobacter_bilis,label,#e8daef
+Helicobacter_mustelae,label,#e8daef
+Helicobacter_cetorum,label,#e8daef
+Helicobacter_acinonychis_str._Sheeba,label,#e8daef
+Helicobacter_pylori,label,#e8daef
+Helicobacter_felis,label,#e8daef
+Helicobacter_heilmannii,label,#e8daef
+Wolinella_succinogenes,label,#ffffff
+Helicobacter_apodemus,label,#e8daef
+Helicobacter_canadensis,label,#e8daef
+Helicobacter_pullorum,label,#e8daef

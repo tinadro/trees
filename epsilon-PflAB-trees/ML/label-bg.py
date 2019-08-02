@@ -15,9 +15,6 @@ def lookup_by_names(tree):
             if clade.name in names:
                 raise ValueError("Duplicate key: %s" % clade.name)
             names.append(clade.name)
-    names = [i for i in names if 'porcinus' not in i ]
-    names.append('Arcobacter_porcinus_GCF_004299785.1')
-    names = names[1:]
     return names # spits out a dictionary where the keys are the node names, values are Clade(branch_length=value, name=same as key)
 
 def node_label_table(nodes):
@@ -26,9 +23,9 @@ def node_label_table(nodes):
 	
 	for nm in names:
 		if 'Helicobacter_pylori' in nm:
-			line = pd.Series({'node': nm, 'type': 'label_background', 'hex_color': '#dbc4e6'})
+			line = pd.Series({'node': nm, 'type': 'label_background', 'hex_color': '#d9c1e4'})
 		elif 'Helicobacter' in nm:
-			line = pd.Series({'node': nm, 'type': 'label_background', 'hex_color': '#e8daef'})
+			line = pd.Series({'node': nm, 'type': 'label_background', 'hex_color': '#ece1f2'})
 		elif 'Arcobacter' in nm:
 			line = pd.Series({'node': nm, 'type': 'label_background', 'hex_color': '#d5f5e3'})
 		elif 'Sulfurospirillum' in nm:
@@ -37,6 +34,8 @@ def node_label_table(nodes):
 			line = pd.Series({'node': nm, 'type': 'label_background', 'hex_color': '#f8d799'})
 		elif 'Campylobacter' in nm:
 			line = pd.Series({'node': nm, 'type': 'label_background', 'hex_color': '#ffffcc'})
+		else: 
+			line = pd.Series()
 		results = results.append(line, ignore_index=True)
 		i += 1
 		print(i)
