@@ -10,26 +10,26 @@
 . Tree topology search : 		NNIs
 . Initial tree: 			user tree (16s-consense100)
 . Model of nucleotides substitution: 	F84
-. Number of taxa: 			95
-. Log-likelihood: 			-29947.93724
-. Unconstrained likelihood: 		-13395.51149
-. Parsimony: 				6087
-. Tree size: 				10.79981
+. Number of taxa: 			96
+. Log-likelihood: 			-30401.63918
+. Unconstrained likelihood: 		-13369.88557
+. Parsimony: 				6189
+. Tree size: 				10.65220
 . Discrete gamma model: 		Yes
   - Number of categories: 		4
   - Gamma shape parameter: 		0.317
-. Transition/transversion ratio: 	3.137
+. Transition/transversion ratio: 	3.116
 . Nucleotides frequencies:
-  - f(A)= 0.27308
-  - f(C)= 0.21357
-  - f(G)= 0.28597
-  - f(T)= 0.22738
+  - f(A)= 0.27289
+  - f(C)= 0.21371
+  - f(G)= 0.28623
+  - f(T)= 0.22717
 
 . Run ID:				none
-. Random seed:				1564503750
+. Random seed:				1564768374
 . Subtree patterns aliasing:		no
 . Version:				20120412
-. Time used:				0h3m31s (211 seconds)
+. Time used:				0h2m51s (171 seconds)
 
  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
  Suggested citations:

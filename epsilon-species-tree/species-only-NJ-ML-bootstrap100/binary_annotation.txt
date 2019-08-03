@@ -169,3 +169,4 @@ Campylobacter_upsaliensis,1,1,-1,-1,-1
 Helicobacter_pullorum,1,1,-1,-1,-1
 Helicobacter_cholecystus,1,1,-1,-1,-1
 Campylobacter_showae,1,1,-1,-1,-1
+Hydrogenimonas_sp.,1,1,-1,-1,-1
