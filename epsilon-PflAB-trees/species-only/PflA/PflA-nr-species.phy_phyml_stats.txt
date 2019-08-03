@@ -10,20 +10,20 @@
 . Tree topology search : 		NNIs
 . Initial tree: 			user tree (PflA-consense100)
 . Model of amino acids substitution: 	JTT
-. Number of taxa: 			80
-. Log-likelihood: 			-80135.02720
-. Unconstrained likelihood: 		-6114.70057
-. Parsimony: 				16717
-. Tree size: 				32.20675
+. Number of taxa: 			81
+. Log-likelihood: 			-81128.78582
+. Unconstrained likelihood: 		-6099.09800
+. Parsimony: 				16927
+. Tree size: 				32.46249
 . Discrete gamma model: 		Yes
   - Number of categories: 		4
-  - Gamma shape parameter: 		2.320
+  - Gamma shape parameter: 		2.339
 
 . Run ID:				none
-. Random seed:				1564669150
+. Random seed:				1564855605
 . Subtree patterns aliasing:		no
 . Version:				20120412
-. Time used:				0h11m36s (696 seconds)
+. Time used:				0h10m41s (641 seconds)
 
  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
  Suggested citations:
